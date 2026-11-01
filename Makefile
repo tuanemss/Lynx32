@@ -1,4 +1,4 @@
-GNUARM_PREFIX ?= /Users/tuanem/.local/arm-none-eabi/bin/arm-none-eabi-
+GNUARM_PREFIX ?= arm-none-eabi-
 
 CC = $(GNUARM_PREFIX)gcc
 CFLAGS = -Wall -W -pedantic -Wno-long-long -Os -fcall-used-r9 -fpie
