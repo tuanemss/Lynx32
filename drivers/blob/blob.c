@@ -314,7 +314,7 @@ save_all_blobs(void)
     fb_print_line(":", 0xFFFFFF);
     fb_print_line(": copyright (c) 2023 - 2026", 0xFFFFFF);
     fb_print_line(":", 0xFFFFFF);
-    fb_print_line(": BUILD_TAG: 2026.1.10", 0xFFFFFF);
+    fb_print_line(": BUILD_TAG: 2026.12.11", 0xFFFFFF);
     fb_print_line(":", 0xFFFFFF);
     fb_print_line(": BUILD_STYLE: RELEASE", 0xFFFFFF);
     fb_print_line(":", 0xFFFFFF);

@@ -31,7 +31,7 @@ int cmd_version(int argc, CmdArg *argv)
 {
 	(void)argc;
 	(void)argv;
-	printf_("\x1b[1;5;31mLynx32.RELEASE-2026.1.1\x1b[m\n");
+	printf_("\x1b[1;5;31mLynx32.RELEASE-2026.12.11\x1b[m\n");
 
 	return 0;
 }
