@@ -376,9 +376,11 @@ save_all_blobs(void)
     }
 
     /* Kernelcache */
-    blobs[n++] = save_krnl();
-    if (blobs[n - 1]) {
+    if (dev.ios_version[0] < '5') {
+        blobs[n++] = save_krnl();
+        if (blobs[n - 1]) {
         fb_print_line("Dumped: Kernel SHSH", 0xFFFFFF);
+        }
     }
 
     for (total = 0, i = 0; i < n; i++) {
