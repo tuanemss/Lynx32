@@ -326,8 +326,15 @@ find_h2fmi_select(void)
     if (!mm) {
         return NULL;
     }
+    /* touch 3 llb dumping */
     fn = push_lr_search_up(mm, 0x200);
     if (!fn) {
+        const void *ref = find_xref("nand_read_block_hook: failure ", sizeof("nand_read_block_hook: failure ") -1);
+        
+        if (ref && (bl = bl_search_down(ref, 16))) {
+            return (h2fmi_select_t)(int)resolve_bl32(bl);
+        }
+
         return NULL;
     }
     bl = bl_search_down(fn, 32);

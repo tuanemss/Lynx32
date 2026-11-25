@@ -117,7 +117,7 @@ save_llb_from_nor0(void *nor0)
 static struct blob_t *
 save_llb(void)
 {
-    /* Auto-detect if device has SPI NOR ('nor0') such as iPad 1, iPod touch 3G, iPhone 3GS */
+    /* Auto-detect if device has SPI NOR ('nor0') such as iPad 1, iPhone 3GS */
     void *nor0 = find_nor0_bdev();
     if (nor0) {
         return save_llb_from_nor0(nor0);
